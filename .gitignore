@@ -218,3 +218,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# QCoDeS / project data
+data/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local VS Code settings
+.vscode/
+
+# Temporary / generated plots
+*.png
+*.pdf
