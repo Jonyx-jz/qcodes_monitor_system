@@ -1,5 +1,3 @@
-# qcodes_monitor_system
-
 # QCoDeS Synthetic Monitoring System
 
 A small monitoring system built with QCoDeS.
