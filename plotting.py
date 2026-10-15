@@ -110,7 +110,7 @@ class LivePlotter:
 
                 axis.relim()
                 axis.autoscale_view()
-
+                axis.margins(x=0.05,y=0.10,)
             fig.canvas.draw_idle()
 
             plt.pause(
@@ -118,7 +118,7 @@ class LivePlotter:
             )
 
         plt.ioff()
-        plt.show()
+        plt.close(fig)
 
 
 class DatabasePlotter:
@@ -180,11 +180,11 @@ class DatabasePlotter:
             started = dataset.run_timestamp()
             completed = dataset.completed_timestamp()
 
-        print(
+            print(
             f"Run ID: {dataset.run_id} | "
             f"Started: {started} | "
             f"Completed: {completed}"
-        )
+            )
 
         return recent
 
